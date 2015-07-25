@@ -1,0 +1,38 @@
+@font-face {
+  font-family: billion-stars;
+  src: url(./css/fonts/billion_stars/BillionStars_PersonalUse.ttf); }
+body {
+  background-color: #18bc9c; }
+
+.example-1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-style: none;
+  padding: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  .example-1 .example-2 {
+    color: #606060;
+    -moz-transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    transition: All 0.2s ease; }
+  .example-1 .example-2:hover {
+    color: #a0a0a0; }
+  .example-1 .example-3 {
+    font-size: 24pt;
+    font-family: "billion-stars", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, serif, sans-serif;
+    padding: 2px 15px 2px 15px;
+    background-color: #18bc9c;
+    color: white;
+    border-style: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+  .example-1 .example-3:hover {
+    background-color: white;
+    color: #18bc9c;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

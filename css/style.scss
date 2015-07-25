@@ -1,0 +1,57 @@
+@font-face {
+    font-family: billion-stars;
+    src: url(./css/fonts/billion_stars/BillionStars_PersonalUse.ttf);
+}
+
+$green: #18bc9c;
+$black: #606060;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($time) {
+    -moz-transition: All $time ease;
+    -webkit-transition: All $time ease;
+    transition: All $time ease;
+}
+    
+body {
+    background-color: $green;
+}
+
+.example-1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: none;
+    padding: 50px;
+    @include border-radius(10px);
+    
+    .example-2 {
+        color: $black;
+        @include transition(0.2s);
+    }
+    
+    .example-2:hover {
+        color: lighten($black, 25%);
+    }
+    
+    .example-3 {
+        font-size: 36pt;
+        font-family: "billion-stars", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, serif, sans-serif;
+        padding: 2px 15px 2px 15px;
+        background-color: $green;
+        color: white;
+        border-style: none;
+        @include border-radius(10px);
+    }
+    
+    .example-3:hover {
+        background-color: white;
+        color: $green;
+        text-decoration: none;
+    }
+
+}
