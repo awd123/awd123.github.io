@@ -24,13 +24,18 @@ body {
 }
 
 .example-1 {
+    width: 98%;
+    height: 98%;
     background-color: rgba(255, 255, 255, 0.5);
     border-style: none;
     padding: 50px;
     @include border-radius(10px);
     
     .example-2 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 120pt;
         color: $black;
+        text-decoration: none;
         @include transition(0.2s);
     }
     
@@ -39,19 +44,22 @@ body {
     }
     
     .example-3 {
-        font-size: 36pt;
-        font-family: "billion-stars", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, serif, sans-serif;
-        padding: 2px 15px 2px 15px;
+        font-size: 250%;
+        font-family: 'billion-stars', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, serif, sans-serif;
+        padding: 4px 25px 4px 25px;
         background-color: $green;
         color: white;
-        border-style: none;
-        @include border-radius(10px);
+        border: {
+            style: solid;
+            width: 2px;
+            color: white;
+        }
+        @include border-radius(15px);
     }
     
     .example-3:hover {
         background-color: white;
         color: $green;
-        text-decoration: none;
     }
 
 }
