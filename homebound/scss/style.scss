@@ -1,0 +1,207 @@
+$background-color: darken(#18bc9c, 20%);
+$black: #101010;
+$red: #bc1838;
+$green: #18bc9c;
+/*$blue: #188abc;*/
+$blue: #1838bc;
+$lightgreen: #38bc18;
+
+@mixin transition($time) {
+    -moz-transition: All $time ease;
+    -webkit-transition: All $time ease;
+    transition: All $time ease;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin dl-link($bg-color, $text-color, $position) {
+    display: inline-block;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: 'Open Sans', 'Helvetica', sans-serif, serif;
+    font-size: 18pt;
+    text-decoration: none;
+    float: $position;
+    margin: 1.5em;
+    padding: 1.5em;
+    border-style: none;
+    @include border-radius(5px);
+}
+
+hmtl {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: $black;*/
+    /*background-color: $background-color;*/
+}
+
+.navbar {
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 98%;
+    background-color: $black;
+    padding: 1em 1% 1em 1%;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-bottom: 5px solid $green;*/
+    /*border-bottom: 5px solid $lightgreen;*/
+    border-bottom: 5px solid $lightgreen;
+    
+    p {
+        display: inline;
+        font-family: 'Poiret One', 'Helvetica', sans-serif, serif;
+        font-size: 22pt;
+        /*color: $green;*/
+        /*color: $lightgreen;*/
+        color: white;
+        margin: 0px 10px 0px 10px;
+        @include transition(0.2s);
+    }
+    
+    p:hover {
+        cursor: pointer;
+        /*color: darken($green, 20%);*/
+        color: darken($lightgreen, 20%);
+    }
+}
+
+.backToTop {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+#header {
+    display: block;
+    margin-top: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica', sans-serif, serif;
+    font-size: 100pt;
+    /*color: $red;*/
+    color: $black;
+    @include transition(0.2s);
+    
+    .underline {
+        display: inline;
+        border-bottom: 5px solid transparent;
+        @include transition(0.2s);
+    }
+}
+
+#header:hover {
+    .underline {
+        /*color: darken($red, 20%);
+        border-bottom: 5px solid darken($red, 20%);*/
+        color: darken($green, 50%);
+        border-bottom: 5px solid darken($green, 50%);
+    }
+}
+
+#subheader {
+    display: block;
+    text-align: center;
+    font-family: 'Amatic SC', 'Helvetica', sans-serif, serif;
+    font-size: 22pt;
+    color: $red;
+}
+
+#testimonials {
+    background-color: orange;
+}
+
+.testimonials-container {
+    text-align: center;
+    font-family: 'Poiret One', 'Helvetica', sans-serif, serif;
+    padding: 1.2em;
+    width: 100%;
+    
+    h1 {
+        font-size: 32pt;
+        color: $lightgreen;
+    }
+    
+    div {
+        h3 {
+            font-size: 22pt;
+            color: $black;
+        }
+    }
+}
+
+.parallax-window {
+    padding: 4em 0px 4em 0px;
+    background: transparent;
+}
+
+.github-link {
+    @include dl-link($red, white, left);
+    @include transition(0.2s);
+}
+
+.github-link:hover {
+    color: darken(white, 50%);
+}
+
+.github-link:active {
+    position: relative;
+    top: 1px;
+    background-color: darken($red, 20%);
+}
+
+.gamejolt-link {
+    @include dl-link($blue, white, initial);
+    @include transition(0.2s);
+}
+
+.gamejolt-link:hover {
+    color: darken(white, 50%);
+}
+
+.gamejolt-link:active {
+    position: relative;
+    top: 1px;
+    background-color: darken($blue, 20%);
+}
+
+.content-div {
+    /*position: absolute;*/
+    /*top: 2000px;*/
+    padding: 1%;
+    width: 98%;
+    border-style: none;
+    @include border-radius(10px);
+}
+
+.content-description {
+    background-color: rgba(255,255,255,0.7);
+    margin: 2em 4em 2em 4em;
+    padding: 2em;
+    border-style: none;
+    @include border-radius(10px);
+    @include transition(0.2s);
+    
+    #description {
+        font-family: 'Poiret One', 'Helvetica', sans-serif, serif;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+}
+
+.main-content:hover {
+    background-color: white;
+}
