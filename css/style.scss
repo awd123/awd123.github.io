@@ -1,0 +1,20 @@
+$bg: #565532;
+
+/* transition mixin */
+@mixin transition($time) {
+  -webkit-transition: all $time;
+  -moz-transition:    all $time;
+  transition:         all $time;
+}
+
+/* border-radius mixin */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  -ms-border-radius:     $radius;
+  border-radius:         $radius;
+}
+
+body {
+  background-color: $bg;
+}
