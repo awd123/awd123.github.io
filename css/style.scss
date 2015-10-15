@@ -19,6 +19,30 @@ body {
   background-color: $bg;
 }
 
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  position: relative;
+  height: 1px;
+  width:  6px;
+  background-color: white;
+  border-style: none;
+  @include border-radius(10px);
+}
+
+.menu-icon::before {
+  top: -2px;
+}
+
+.menu-icon::after {
+  top: 2px;
+}
+
+.menu {
+  position: absolute;
+  left: -300px;
+}
+
 .header,
 .link {
   text-align: center;
