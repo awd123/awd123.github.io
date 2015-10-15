@@ -5,15 +5,15 @@
   main = function() {
     $('.menu-icon').click(function() {
       $('.menu').animate({
-        left: "0px"
+        left: '0px'
       });
       return $('body').animate({
-        left: "300px"
+        left: '300px'
       });
     });
     return $('.close-icon').click(function() {
       $('.menu').animate({
-        left: "-300px"
+        left: '-300px'
       });
       return $('body').animate({
         left: "0px"
