@@ -16,6 +16,5 @@ main = ->
   $('.menu-icon-open').click ->
     $('.menu').animate left: '-200px', 200 # move menu offscreen
     $('body').animate  left: '0px',    200 # move body back to screen
-    $('.menu-icon').toggleClass 'menu-icon-open'
 
 $(document).ready main

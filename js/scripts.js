@@ -25,10 +25,9 @@
       $('.menu').animate({
         left: '-200px'
       }, 200);
-      $('body').animate({
+      return $('body').animate({
         left: '0px'
       }, 200);
-      return $('.menu-icon').toggleClass('menu-icon-open');
     });
   };
 
