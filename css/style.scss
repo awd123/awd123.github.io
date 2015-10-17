@@ -85,19 +85,16 @@ body {
     a {
       font-family: $font-stack;
       border-bottom: 1px solid white;
-      /*
       padding-bottom: 0.5em;
       padding-left:   2em;
-      */
-      padding: auto;
       line-height:    3em;
-      color: darken(white, 10%);
+      color: white;
       text-transform:  uppercase;
       text-decoration: none;
       @include transition($tr-time);
     }
     a:hover {
-      color: darken(white, 15%);
+      color: darken(white, 10%);
     }
   }
 }
