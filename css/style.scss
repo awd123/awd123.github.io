@@ -13,7 +13,10 @@ body {
 
 /* menu styles */
 .menu-icon-background {
-  background-color: #202024;
+  display: inline-block;
+  background-color: #444;
+  padding: 0.3em;
+  margin:  0.3em;
 }
 
 .menu-icon {
@@ -23,6 +26,7 @@ body {
 }
 
 .menu-word {
+  display: inline;
   font-family: $font-stack;
   text-transform: uppercase;
   color: white;
@@ -34,7 +38,6 @@ body {
   width:  2em;
   background-color: white;
   @include transition($tr-time);
-  border-style: none;
   @include border-radius(2px);
   &::before,
   &::after {
@@ -46,25 +49,26 @@ body {
     position: absolute;
     z-index: -1;
     @include transition($tr-time $tr-time/2);
-    border-style: none;
     @include border-radius(2px);
   }
   &::before {
-    top: -0.3em;
+    top: -0.5em;
   }
   &::after {
-    top: 0.3em;
+    top: 0.5em;
   }
 }
 
 .menu-icon-open {
   .menu-bar {
-    @include transform(scale(0.5));
+    @include transform(scale(0.8));
     background-color: transparent;
-    background-color: red;
     &::before { @include transform(rotate( 45deg)); }
     &::after  { @include transform(rotate(-45deg)); }
-    &::before, &::after { top: 0 !important; }
+    &::before, &::after {
+      top: 0 !important;
+      background-color: red;
+    }
   }
 }
 
