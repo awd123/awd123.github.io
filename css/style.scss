@@ -34,22 +34,22 @@ body {
 
 .menu-bar {
   position: relative;
-  height: 0.3em;
+  height: 0.2em;
   width:  2em;
   background-color: white;
   @include transition($tr-time);
-  @include border-radius(2px);
+  /* @include border-radius(2px); */
   &::before,
   &::after {
     display: block;
     content: '';
-    height: 0.3em;
+    height: 0.2em;
     width:  2em;
     background-color: white;
     position: absolute;
     /* z-index: -1; */
     @include transition($tr-time $tr-time/2);
-    @include border-radius(2px);
+    /* @include border-radius(2px); */
   }
   &::before {
     top: -0.5em;
@@ -61,7 +61,7 @@ body {
 
 .menu-icon-open {
   .menu-bar {
-    @include transform(scale(0.8));
+    @include transform(scale(0.7));
     background-color: transparent;
     &::before { @include transform(rotate( 45deg)); }
     &::after  { @include transform(rotate(-45deg)); }

@@ -28,20 +28,17 @@ body {
 
 .menu-bar {
   position: relative;
-  height: 0.3em;
+  height: 0.2em;
   width: 2em;
   background-color: white;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px; }
+  /* @include border-radius(2px); */ }
   .menu-bar::before, .menu-bar::after {
     display: block;
     content: '';
-    height: 0.3em;
+    height: 0.2em;
     width: 2em;
     background-color: white;
     position: absolute;
@@ -49,19 +46,16 @@ body {
     -webkit-transition: all 0.2s 0.1s;
     -moz-transition: all 0.2s 0.1s;
     transition: all 0.2s 0.1s;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px; }
+    /* @include border-radius(2px); */ }
   .menu-bar::before {
     top: -0.5em; }
   .menu-bar::after {
     top: 0.5em; }
 
 .menu-icon-open .menu-bar {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  transform: scale(0.7);
   background-color: transparent; }
   .menu-icon-open .menu-bar::before {
     -webkit-transform: rotate(45deg);
