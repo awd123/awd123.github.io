@@ -53,6 +53,7 @@ body {
     background-color: red;
     &::before { @include transform(rotate( 45deg)); }
     &::after  { @include transform(rotate(-45deg)); }
+    &::before, &::after { top: 0 !important; }
   }
 }
 
