@@ -35,12 +35,22 @@ body {
   position: fixed;
   left: -200px;
   background-color: #888; }
-  .menu ul a {
-    font-family: "Open Sans", sans-serif, serif;
-    color: #e6e6e6;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s; }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .menu ul a {
+      font-family: "Open Sans", sans-serif, serif;
+      border-bottom: 1px solid white;
+      padding-bottom: 0.3em;
+      color: #e6e6e6;
+      text-transform: capitalize;
+      text-decoration: none;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s; }
+    .menu ul a:hover {
+      text-decoration: underline; }
 
 .close-icon::before,
 .close-icon::after {
