@@ -17,10 +17,8 @@ $bg: #7fba5d;
 
 body {
   position: absolute;
-  background {
-    image: url('../img/beach_bg.jpg');
-    repeat: none;
-  }
+  background-image: url('../img/beach_bg.jpg');
+  background-repeat: no-repeat;
 }
 
 /* menu styles */

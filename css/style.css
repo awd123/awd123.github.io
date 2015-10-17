@@ -1,10 +1,9 @@
 /* transition mixin */
 /* border-radius mixin */
 body {
-  position: absolute; }
-  body background {
-    image: url("../img/beach_bg.jpg");
-    repeat: none; }
+  position: absolute;
+  background-image: url("../img/beach_bg.jpg");
+  background-repeat: no-repeat; }
 
 /* menu styles */
 .menu-icon {
