@@ -59,8 +59,11 @@ body {
   position: fixed;
   left: -200px;
   background-color: #888;
-  a {
-    color: darken(white, 10%);
+  ul {
+    a {
+      color: darken(white, 10%);
+      @include transition(0.2s);
+    }
   }
 }
 
@@ -72,6 +75,7 @@ body {
 .main-body {
   height: 100%;
   background-image: url($bg);
+  @include background-size(cover);
 }
 
 .header,

@@ -35,8 +35,11 @@ body {
   position: fixed;
   left: -200px;
   background-color: #888; }
-  .menu a {
-    color: #e6e6e6; }
+  .menu ul a {
+    color: #e6e6e6;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
 
 .close-icon::before,
 .close-icon::after {
@@ -44,7 +47,11 @@ body {
 
 .main-body {
   height: 100%;
-  background-image: url("../img/beach_bg.jpg"); }
+  background-image: url("../img/beach_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .header,
 .link {
