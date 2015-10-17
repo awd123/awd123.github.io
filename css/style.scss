@@ -51,8 +51,8 @@ body {
     @include transform(scale(0.5));
     background-color: transparent;
     background-color: red;
-    &::before { @include transition(rotate( 45deg)); }
-    &::after  { @include transition(rotate(-45deg)); }
+    &::before { @include transform(rotate( 45deg)); }
+    &::after  { @include transform(rotate(-45deg)); }
   }
 }
 

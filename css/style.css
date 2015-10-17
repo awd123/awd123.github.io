@@ -54,13 +54,13 @@ body {
   background-color: transparent;
   background-color: red; }
   .menu-icon-open .menu-bar::before {
-    -webkit-transition: all rotate(45deg);
-    -moz-transition: all rotate(45deg);
-    transition: all rotate(45deg); }
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
   .menu-icon-open .menu-bar::after {
-    -webkit-transition: all rotate(-45deg);
-    -moz-transition: all rotate(-45deg);
-    transition: all rotate(-45deg); }
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .menu {
   height: 100%;
