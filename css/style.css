@@ -1,7 +1,10 @@
 /* transition mixin */
 /* border-radius mixin */
 body {
-  position: absolute;
+  position: relative;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
   background-image: url("../img/beach_bg.jpg");
   background-repeat: no-repeat; }
 
