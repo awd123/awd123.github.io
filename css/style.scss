@@ -1,4 +1,4 @@
-$bg: #7fba5d;
+$bg: '../img/beach_bg.jpg';
 
 /* transition mixin */
 @mixin transition($time) {
@@ -20,8 +20,6 @@ body {
   left:   0;
   margin: 0;
   overflow: hidden;
-  background-image: url('../img/beach_bg.jpg');
-  background-repeat: no-repeat;
 }
 
 /* menu styles */
@@ -52,16 +50,18 @@ body {
   position: absolute;
   left: -200px;
   background-color: #888;
-  nav {
-    a {
-      color: darken(white, 10%);
-    }
+  a {
+    color: darken(white, 10%);
   }
 }
 
 .close-icon::before,
 .close-icon::after {
   background-color: red;
+}
+
+.main-body {
+  background-image: url($bg);
 }
 
 .header,
@@ -71,11 +71,11 @@ body {
 }
 
 .link {
-  color: darken($bg, 20%);
+  color: darken(white, 20%);
   text-decoration: none;
   @include transition(0.2s);
 }
 
 .link:hover {
-  color: darken($bg, 25%);
+  color: darken(white, 25%);
 }
