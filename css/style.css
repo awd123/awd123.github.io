@@ -4,6 +4,7 @@ body {
   position: absolute;
   background-color: #7fba5d; }
 
+/* menu styles */
 .menu-icon {
   cursor: pointer; }
 
@@ -31,9 +32,13 @@ body {
   position: absolute;
   left: -300px; }
 
+.close-icon {
+  color: red; }
+
 .header,
 .link {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Open Sans', sans-serif, serif; }
 
 .link {
   color: #4f7c35;
