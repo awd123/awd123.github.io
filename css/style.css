@@ -1,8 +1,10 @@
 /* transition mixin */
 /* border-radius mixin */
 body {
-  position: absolute;
-  background-color: #7fba5d; }
+  position: absolute; }
+  body background {
+    image: url("../img/beach_bg.jpg");
+    repeat: none; }
 
 /* menu styles */
 .menu-icon {
@@ -11,15 +13,14 @@ body {
 .menu-bar,
 .menu-bar::before,
 .menu-bar::after {
-  position: relative;
-  height: 0.5em;
+  height: 0.3em;
   width: 2em;
   background-color: white;
   border-style: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
 
 .menu-bar::before {
   top: -0.5em; }
@@ -35,8 +36,9 @@ body {
   .menu nav a {
     color: #e6e6e6; }
 
-.close-icon {
-  color: red; }
+.close-icon::before,
+.close-icon::after {
+  background-color: red; }
 
 .header,
 .link {

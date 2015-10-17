@@ -17,7 +17,10 @@ $bg: #7fba5d;
 
 body {
   position: absolute;
-  background-color: $bg;
+  background {
+    image: url('../img/beach_bg.jpg');
+    repeat: none;
+  }
 }
 
 /* menu styles */
@@ -28,12 +31,11 @@ body {
 .menu-bar,
 .menu-bar::before,
 .menu-bar::after {
-  position: relative;
-  height: 0.5em;
+  height: 0.3em;
   width:  2em;
   background-color: white;
   border-style: none;
-  @include border-radius(10px);
+  @include border-radius(5px);
 }
 
 .menu-bar::before {
@@ -56,8 +58,9 @@ body {
   }
 }
 
-.close-icon {
-  color: red;
+.close-icon::before,
+.close-icon::after {
+  background-color: red;
 }
 
 .header,
