@@ -13,7 +13,8 @@ body {
   display: inline-block;
   background-color: #444;
   padding: 0.3em;
-  margin: 0.3em; }
+  margin: 0.3em;
+  z-index: -2; }
 
 .menu-icon {
   display: inline-block;
