@@ -10,6 +10,7 @@ main = ->
   $('.menu-icon').click ->
     $('.menu').animate left: '0px',    200
     $('body').animate  left: '200px',  200
+    $('.menu-icon').toggleClass 'menu-icon-open'
 
   $('.close-icon').click ->
     $('.menu').animate left: '-200px', 200
