@@ -34,7 +34,7 @@ body {
 /* menu styles */
 .menu-icon {
   cursor: pointer;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .menu-bar,
@@ -44,7 +44,7 @@ body {
   width:  2em;
   background-color: white;
   border-style: none;
-  @include border-radius(5px);
+  @include border-radius(2px);
 }
 
 .menu-bar::before {
