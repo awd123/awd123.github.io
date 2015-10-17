@@ -22,15 +22,18 @@ body {
   border-radius: 10px; }
 
 .menu-bar::before {
-  top: -2px; }
+  top: -0.5em; }
 
 .menu-bar::after {
-  top: 2px; }
+  top: 0.5em; }
 
 .menu {
-  width: 300px;
+  width: 200px;
   position: absolute;
-  left: -300px; }
+  left: -200px;
+  background-color: #888; }
+  .menu nav a {
+    color: #e6e6e6; }
 
 .close-icon {
   color: red; }

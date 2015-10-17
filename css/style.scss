@@ -37,17 +37,23 @@ body {
 }
 
 .menu-bar::before {
-  top: -2px;
+  top: -0.5em;
 }
 
 .menu-bar::after {
-  top: 2px;
+  top: 0.5em;
 }
 
 .menu {
-  width: 300px;
+  width: 200px;
   position: absolute;
-  left: -300px;
+  left: -200px;
+  background-color: #888;
+  nav {
+    a {
+      color: darken(white, 10%);
+    }
+  }
 }
 
 .close-icon {
