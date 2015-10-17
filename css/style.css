@@ -42,7 +42,8 @@ body {
     .menu ul a {
       font-family: "Open Sans", sans-serif, serif;
       border-bottom: 1px solid white;
-      padding-bottom: 0.3em;
+      padding-bottom: 0.5em;
+      padding-left: 0.5em;
       color: #e6e6e6;
       text-transform: capitalize;
       text-decoration: none;
