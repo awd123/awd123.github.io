@@ -13,7 +13,7 @@ main = ->
     $('body').animate  left: '200px',  200 # move body 200 pixels to the right
     $('.menu-icon').toggleClass 'menu-icon-open'
 
-  $('.close-icon').click ->
+  $('.menu-icon-open').click ->
     $('.menu').animate left: '-200px', 200 # move menu offscreen
     $('body').animate  left: '0px',    200 # move body back to screen
 
