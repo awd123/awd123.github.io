@@ -1,35 +1,101 @@
-/*
-Error: Invalid CSS after "$tr-time:    0.2s": expected selector or at-rule, was "@import 'partia..."
-        on line 5 of style.scss
+/* transition mixin */
+/* border-radius mixin */
+/* background-size mixin */
+body {
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative; }
 
-1: $bg:         '../img/beach_bg.jpg';
-2: $font-stack: 'Open Sans', sans-serif, serif;
-3: $tr-time:    0.2s
-4: 
-5: @import 'partials/mixins';
-6: 
-7: body {
-8:   left:   0;
-9:   margin: 0;
-10:   overflow: hidden;
+/* menu styles */
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em; }
 
-Backtrace:
-style.scss:5
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/scss/parser.rb:43:in `parse'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:412:in `run'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/share/gems/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/share/gems/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$tr-time:    0.2s\": expected selector or at-rule, was \"@import 'partia...\"\A         on line 5 of style.scss\A \A 1: $bg:         '../img/beach_bg.jpg';\A 2: $font-stack: 'Open Sans', sans-serif, serif;\A 3: $tr-time:    0.2s\A 4: \A 5: @import 'partials/mixins';\A 6: \A 7: body {\A 8:   left:   0;\A 9:   margin: 0;\A 10:   overflow: hidden;"; }
+.menu-bar {
+  height: 0.3em;
+  width: 2em;
+  background-color: white;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-style: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
+  .menu-bar::before, .menu-bar::after {
+    display: block;
+    content: '';
+    height: 0.3em;
+    width: 2em;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.2s 0.1s;
+    -moz-transition: all 0.2s 0.1s;
+    transition: all 0.2s 0.1s;
+    border-style: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+  .menu-bar::before {
+    top: -0.3em; }
+  .menu-bar::after {
+    top: 0.3em; }
+
+.menu {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: -200px;
+  background-color: #202024; }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .menu ul a {
+      font-family: "Open Sans", sans-serif, serif;
+      border-bottom: 1px solid white;
+      padding-bottom: 0.5em;
+      padding-left: 2em;
+      line-height: 3em;
+      color: #e6e6e6;
+      text-transform: capitalize;
+      text-decoration: none;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s; }
+    .menu ul a:hover {
+      text-decoration: underline; }
+
+.close-icon::before,
+.close-icon::after {
+  background-color: red; }
+
+.main-body {
+  height: 100%;
+  background-image: url("../img/beach_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.header,
+.link {
+  text-align: center;
+  font-family: "Open Sans", sans-serif, serif; }
+
+.link {
+  color: #cccccc;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.link:hover {
+  color: #bfbfbf; }
+
+/*# sourceMappingURL=style.css.map */
