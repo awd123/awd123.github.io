@@ -12,10 +12,19 @@ body {
 }
 
 /* menu styles */
+.menu-icon-background {
+  background-color: #202024;
+}
+
 .menu-icon {
   display: inline-block;
   cursor: pointer;
   padding: 0.5em;
+}
+
+.menu-word {
+  text-transform: uppercase;
+  color: white;
 }
 
 .menu-bar {
@@ -75,7 +84,7 @@ body {
       padding-left:   2em;
       line-height:    3em;
       color: darken(white, 10%);
-      text-transform:  capitalize;
+      text-transform:  uppercase;
       text-decoration: none;
       @include transition($tr-time);
     }
