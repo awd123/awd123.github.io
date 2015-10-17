@@ -30,7 +30,7 @@ body {
 .menu-bar::after {
   position: relative;
   height: 0.5em;
-  width:  3em;
+  width:  2em;
   background-color: white;
   border-style: none;
   @include border-radius(10px);
