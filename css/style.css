@@ -51,7 +51,8 @@ body {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
   transform: scale(0.5);
-  background-color: transparent; }
+  background-color: transparent;
+  background-color: red; }
   .menu-icon-open .menu-bar::before {
     -webkit-transition: all rotate(45deg);
     -moz-transition: all rotate(45deg);
