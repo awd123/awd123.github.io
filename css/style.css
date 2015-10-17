@@ -1,6 +1,7 @@
 /* transition mixin */
 /* border-radius mixin */
 body {
+  position: absolute;
   background-color: #7fba5d; }
 
 .menu-icon {
