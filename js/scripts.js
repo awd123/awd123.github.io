@@ -16,9 +16,10 @@
       $('.menu').animate({
         left: '0px'
       }, 200);
-      return $('body').animate({
+      $('body').animate({
         left: '200px'
       }, 200);
+      return $('.menu-icon').toggleClass('menu-icon-open');
     });
     return $('.close-icon').click(function() {
       $('.menu').animate({
