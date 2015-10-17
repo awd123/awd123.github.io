@@ -3,16 +3,24 @@ $bg: '../img/beach_bg.jpg';
 /* transition mixin */
 @mixin transition($time) {
   -webkit-transition: all $time;
-  -moz-transition:    all $time;
-  transition:         all $time;
+     -moz-transition: all $time;
+          transition: all $time;
 }
 
 /* border-radius mixin */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-  -moz-border-radius:    $radius;
-  -ms-border-radius:     $radius;
-  border-radius:         $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* background-size mixin */
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+     -moz-background-size: $size;
+       -o-background-size: $size;
+          background-size: $size;
 }
 
 body {
@@ -46,8 +54,9 @@ body {
 }
 
 .menu {
+  height: 100%;
   width: 200px;
-  position: absolute;
+  position: fixed;
   left: -200px;
   background-color: #888;
   a {
@@ -61,6 +70,7 @@ body {
 }
 
 .main-body {
+  height: 100%;
   background-image: url($bg);
 }
 

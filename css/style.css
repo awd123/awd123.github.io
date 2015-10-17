@@ -1,5 +1,6 @@
 /* transition mixin */
 /* border-radius mixin */
+/* background-size mixin */
 body {
   position: relative;
   left: 0;
@@ -29,8 +30,9 @@ body {
   top: 0.5em; }
 
 .menu {
+  height: 100%;
   width: 200px;
-  position: absolute;
+  position: fixed;
   left: -200px;
   background-color: #888; }
   .menu a {
@@ -41,6 +43,7 @@ body {
   background-color: red; }
 
 .main-body {
+  height: 100%;
   background-image: url("../img/beach_bg.jpg"); }
 
 .header,
