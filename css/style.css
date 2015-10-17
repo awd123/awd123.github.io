@@ -12,7 +12,6 @@ body {
 .menu-icon-background {
   display: inline-block;
   background-color: #444;
-  padding: 0.3em;
   margin: 0.3em; }
 
 .menu-icon {
@@ -29,12 +28,15 @@ body {
 .menu-bar {
   position: relative;
   height: 0.2em;
-  width: 2em;
+  width: 1em;
   background-color: white;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-  /* @include border-radius(2px); */ }
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
   .menu-bar::before, .menu-bar::after {
     display: block;
     content: '';
@@ -42,20 +44,20 @@ body {
     width: 2em;
     background-color: white;
     position: absolute;
-    /* z-index: -1; */
     -webkit-transition: all 0.2s 0.1s;
     -moz-transition: all 0.2s 0.1s;
     transition: all 0.2s 0.1s;
-    /* @include border-radius(2px); */ }
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
   .menu-bar::before {
     top: -0.5em; }
   .menu-bar::after {
     top: 0.5em; }
 
 .menu-icon-open .menu-bar {
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  transform: scale(0.7);
+  /* @include transform(scale(0.7)); */
   background-color: transparent; }
   .menu-icon-open .menu-bar::before {
     -webkit-transform: rotate(45deg);
