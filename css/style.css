@@ -12,8 +12,8 @@ body {
 .menu-bar::before,
 .menu-bar::after {
   position: relative;
-  height: 1em;
-  width: 6em;
+  height: 0.5em;
+  width: 3em;
   background-color: white;
   border-style: none;
   -webkit-border-radius: 10px;
