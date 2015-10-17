@@ -94,7 +94,7 @@ body {
       @include transition($tr-time);
     }
     a:hover {
-      text-decoration: underline;
+      color: darken(white, 15%);
     }
   }
 }
