@@ -8,12 +8,12 @@
         left: '0px'
       });
       return $('body').animate({
-        left: '300px'
+        left: '200px'
       });
     });
     return $('.close-icon').click(function() {
       $('.menu').animate({
-        left: '-300px'
+        left: '-200px'
       });
       return $('body').animate({
         left: "0px"
