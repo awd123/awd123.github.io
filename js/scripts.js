@@ -21,7 +21,7 @@
       }, 200);
       return $('.menu-icon').toggleClass('menu-icon-open');
     });
-    return $('.close-icon').click(function() {
+    return $('.menu-icon-open').click(function() {
       $('.menu').animate({
         left: '-200px'
       }, 200);
