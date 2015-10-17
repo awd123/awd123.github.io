@@ -1,6 +1,7 @@
 /* transition mixin */
 /* border-radius mixin */
 /* background-size mixin */
+/* transform mixin */
 body {
   left: 0;
   margin: 0;
@@ -45,6 +46,20 @@ body {
     top: -0.3em; }
   .menu-bar::after {
     top: 0.3em; }
+
+.menu-bar:hover {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+  background-color: transparent; }
+  .menu-bar:hover::before {
+    -webkit-transition: all rotate(45deg);
+    -moz-transition: all rotate(45deg);
+    transition: all rotate(45deg); }
+  .menu-bar:hover::after {
+    -webkit-transition: all rotate(-45deg);
+    -moz-transition: all rotate(-45deg);
+    transition: all rotate(-45deg); }
 
 .menu {
   height: 100%;
