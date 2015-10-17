@@ -1,5 +1,6 @@
 $bg:         '../img/beach_bg.jpg';
 $font-stack: 'Open Sans', sans-serif, serif;
+$tr-time:    0.2s
 
 @import 'partials/mixins';
 
@@ -12,26 +13,37 @@ body {
 
 /* menu styles */
 .menu-icon {
+  display: inline-block;
   cursor: pointer;
   padding: 0.5em;
 }
 
-.menu-bar,
-.menu-bar::before,
-.menu-bar::after {
+.menu-bar {
   height: 0.3em;
   width:  2em;
   background-color: white;
+  @include transition($tr-time);
   border-style: none;
   @include border-radius(2px);
-}
-
-.menu-bar::before {
-  top: -0.5em;
-}
-
-.menu-bar::after {
-  top: 0.5em;
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+    height: 0.3em;
+    width:  2em;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    @include transition($tr-time $tr-time/2);
+    border-style: none;
+    @include border-radius(2px);
+  }
+  &::before {
+    top: -0.3em;
+  }
+  &::after {
+    top: 0.3em;
+  }
 }
 
 .menu {
@@ -53,7 +65,7 @@ body {
       color: darken(white, 10%);
       text-transform:  capitalize;
       text-decoration: none;
-      @include transition(0.2s);
+      @include transition($tr-time);
     }
     a:hover {
       text-decoration: underline;
@@ -81,7 +93,7 @@ body {
 .link {
   color: darken(white, 20%);
   text-decoration: none;
-  @include transition(0.2s);
+  @include transition($tr-time);
 }
 
 .link:hover {
