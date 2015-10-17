@@ -49,8 +49,8 @@ body {
 .menu-bar:hover {
   @include transform(scale(0.5));
   background-color: transparent;
-  &::before { @include transition(rotate( 45deg)); }
-  &::after  { @include transition(rotate(-45deg)); }
+  &::before:hover { @include transition(rotate( 45deg)); }
+  &::after:hover  { @include transition(rotate(-45deg)); }
 }
 
 .menu {

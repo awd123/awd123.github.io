@@ -52,11 +52,11 @@ body {
   -moz-transform: scale(0.5);
   transform: scale(0.5);
   background-color: transparent; }
-  .menu-bar:hover::before {
+  .menu-bar:hover::before:hover {
     -webkit-transition: all rotate(45deg);
     -moz-transition: all rotate(45deg);
     transition: all rotate(45deg); }
-  .menu-bar:hover::after {
+  .menu-bar:hover::after:hover {
     -webkit-transition: all rotate(-45deg);
     -moz-transition: all rotate(-45deg);
     transition: all rotate(-45deg); }
