@@ -18,7 +18,8 @@ body {
   padding: 0.5em; }
 
 .menu-word {
-  font-style: bold;
+  font-style: none;
+  font-family: "Open Sans", sans-serif, serif;
   text-transform: uppercase;
   color: white; }
 

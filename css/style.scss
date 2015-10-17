@@ -23,7 +23,8 @@ body {
 }
 
 .menu-word {
-  font-style: bold;
+  font-style: none;
+  font-family: $font-stack;
   text-transform: uppercase;
   color: white;
 }
