@@ -12,3 +12,4 @@ Example:
 $ color 'Hello, World!'
 Hello, World!
 {% endhighlight %}
+Full color documentation is at https://github.com/awd123/color/blob/master/README.md or [here](/color/README.md).
