@@ -1,0 +1,8 @@
+---
+layout: post
+title: "color 0.2.1 released"
+date: 2016-01-23 10:05
+categories: color
+---
+color 0.2.1 has been released! This release adds bug fixes and improved
+documentation. See the change log at [color's GitHub page](https://github.com/awd123/color).
